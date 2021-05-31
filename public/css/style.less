@@ -1,0 +1,95 @@
+div, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #42BAFD;
+    text-align: center
+}
+
+
+
+.content  {
+    width: 70%;
+    min-width: 600px;
+    margin: auto;
+    text-align: left;
+    .company {
+        width: 48%;
+        height: 50px;
+        color: white;
+        font-size: 3rem;
+        font-family: "Catamaran";
+        //font-family: "Roboto";
+    }
+    ul {
+        display: flex;
+        //align-items: center;
+        max-width: 800px;
+        height: 100px;
+        //justify-content: space-evenly;
+        flex-flow: wrap;
+        align-content: flex-end;
+        border: 1px solid yellow;
+        li {
+            //flex: 1 0 0px;
+            //max-width: 300px;
+            //display: inline-block;
+            list-style-type: none;
+            //max-width: 200px;
+
+            //text-align: center;
+            flex-grow: 1;
+            .box {
+                //min-width: 100px;
+                background: grey;
+                border: 1px solid blue;
+            }
+            &:nth-child(2) {
+                flex-grow: 1
+                //align-self: flex-end;
+            }
+        }
+    }
+    .placer {
+        clear: both;
+    }
+    .insurance_text {
+        float: left;
+        margin-top: 30px;
+        margin-left: 30px;
+        color: white;
+        font-size: 2.5rem;
+        font-family: "Quicksand";
+        filter: blur(1px);
+    }
+    .reachable_under {
+        float: right;
+        margin-top: 38px;
+        margin-left: 30px;
+        font-family: "Quicksand";
+        width: 42%;
+        font-size: 2.2rem;
+        color: white;
+    }
+    .beach_family_wrapper {
+        //position: fixed;
+        //text-align: center;
+        width: 100%;
+        height: 920px;
+
+
+        .beach_family {
+            background-image: url(/public/images/beach_family.png);
+            //background-origin: bottom;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-position: center;
+            //width: 1440px;
+            //width: 100%;
+            height: 100%;
+        }
+    }
+
+}
