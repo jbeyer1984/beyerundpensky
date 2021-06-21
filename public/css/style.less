@@ -15,9 +15,54 @@ body {
     min-width: 600px;
     margin: auto;
     text-align: left;
+    .line_separator {
+        height: 1px;
+        background: white;
+        border-bottom: 1px solid #31303040;
+    }
+    header {
+        display:flex;
+        align-items: flex-start;
+        //flex-wrap: nowrap;
+        > .flex {
+            flex: 1 1 10%;
+        }
+        .navigation_wrapper {
+            height: 80px;
+            nav > ul {
+                //width: 500px;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                //flex-direction: row;
+                align-items: flex-start;
+                //flex-flow: nowrap;
+                //flex-wrap: wrap;
+                li {
+                    //flex: 1 1 20%;
+                    //padding: 10px;
+                    //background: #ffffffd1;
+                    //border-radius: 5px;
+                    text-align: center;
+                    //max-width: 140px;
+                    margin: 10px;
+                    padding: 10px;
+                    font-family: "Quicksand";
+                    border-right: 1px solid white;
+                    a {
+                        color: white;
+                        font-size: 1.2rem;
+                        text-shadow: 1px 1px 1px #00000054;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
     .company {
         width: 48%;
         height: 50px;
+        line-height: 4rem;
         color: white;
         font-size: 3rem;
         font-family: "Catamaran";
@@ -31,7 +76,7 @@ body {
         //justify-content: space-evenly;
         flex-flow: wrap;
         align-content: flex-end;
-        border: 1px solid yellow;
+        //border: 1px solid yellow;
         li {
             //flex: 1 0 0px;
             //max-width: 300px;
@@ -72,24 +117,27 @@ body {
         width: 42%;
         font-size: 2.2rem;
         color: white;
+        .small_data {
+            font-size: 1.4rem;
+        }
     }
     .beach_family_wrapper {
         //position: fixed;
-        //text-align: center;
+        text-align: center;
         width: 100%;
         height: 920px;
 
 
-        .beach_family {
-            background-image: url(/public/images/beach_family.png);
-            //background-origin: bottom;
-            background-repeat: no-repeat;
-            object-fit: cover;
-            background-position: center;
-            //width: 1440px;
-            //width: 100%;
-            height: 100%;
-        }
+        //.beach_family {
+        //    background-image: url(/public/images/beach_family.png);
+        //    //background-origin: bottom;
+        //    background-repeat: no-repeat;
+        //    object-fit: cover;
+        //    background-position: center;
+        //    //width: 1440px;
+        //    //width: 100%;
+        //    height: 100%;
+        //}
     }
 
 }
