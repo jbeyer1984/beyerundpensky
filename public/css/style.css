@@ -103,6 +103,9 @@ body {
   height: 20%;
 }
 @media (max-width: 1024px) {
+  .content {
+    overflow: scroll;
+  }
   .content header {
     flex-direction: column;
   }
@@ -110,8 +113,12 @@ body {
     margin-left: 0;
   }
   .content .reachable_under {
-    float: left;
+    display: inline-block;
+    float: none;
     margin-left: 0;
+  }
+  .content .beach_family_wrapper img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
