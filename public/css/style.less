@@ -8,6 +8,15 @@ body {
     text-align: center
 }
 
+@font-face {
+    font-family: 'Quicksand';
+    src:  url(/public/css/fonts/Quicksand.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Catamaran';
+    src:  url(/public/css/fonts/Catamaran.woff2) format('woff2');
+}
+
 .content {
     width: 70%;
     min-width: 600px;
@@ -115,7 +124,7 @@ body {
     .insurance_text {
         float: left;
         margin-top: 30px;
-        //margin-left: 30px;
+        margin-left: 30px;
         color: white;
         //font-size: 2.5rem;
         font-size: 2.2em;
@@ -128,7 +137,7 @@ body {
         margin-top: 38px;
         margin-left: 30px;
         font-family: "Quicksand";
-        width: 100%;
+        width: 42%;
         //font-size: 2.2rem;
         font-size: 2.0em;
         color: white;
@@ -163,7 +172,7 @@ body {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1290px) {
     .content {
         overflow: scroll;
         header {
@@ -175,6 +184,7 @@ body {
         .reachable_under {
             display: inline-block;
             float: none;
+            width: 100%;
             margin-left: 0;
         }
         .beach_family_wrapper img {
