@@ -20,6 +20,10 @@ body {
   min-width: 600px;
   margin: auto;
   text-align: left;
+  display: inline-block;
+}
+.content > div {
+  display: inline-block;
 }
 .content .line_separator {
   height: 1px;
@@ -106,12 +110,15 @@ body {
   font-size: 1.4rem;
 }
 .content .beach_family_wrapper {
-  text-align: center;
   width: 100%;
-  height: 20%;
+  text-align: center;
 }
-.content .beach_family_wrapper img {
-  max-height: 530px;
+.content .beach_family_wrapper > div {
+  background-image: url(/public/images/beach_family.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  overflow: visible;
+  height: 400px;
 }
 @media (max-width: 1290px) {
   .content {
