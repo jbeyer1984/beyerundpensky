@@ -122,7 +122,7 @@ body {
 }
 @media (max-width: 1290px) {
   .content {
-    overflow: scroll;
+    overflow: hidden;
   }
   .content header {
     flex-direction: column;
