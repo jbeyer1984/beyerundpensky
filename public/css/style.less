@@ -4,8 +4,9 @@ div, ul {
 }
 
 body {
-    background: #42BAFD;
-    text-align: center
+    //background: #42BAFD;
+    text-align: center;
+    margin: 0;
 }
 
 @font-face {
@@ -17,6 +18,28 @@ body {
     src:  url(/public/css/fonts/Catamaran.woff2) format('woff2');
 }
 
+body {
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-image: url(/public/images/handshake_work.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    //opacity: 0.9;
+}
+.back_over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: black;
+    opacity: 0.5;
+}
 .content {
     width: 70%;
     min-width: 600px;
@@ -154,6 +177,7 @@ body {
 
     .beach_family_wrapper {
         //position: fixed;
+        display: none;
         width: 100%;
         //width: 80%;
         //height: 20%;
