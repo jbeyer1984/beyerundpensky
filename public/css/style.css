@@ -115,7 +115,8 @@ body {
   font-family: "Quicksand";
   filter: blur(1px);
 }
-.content .reachable_under {
+.content .reachable_under,
+.content .insurance {
   float: right;
   margin-top: 38px;
   margin-left: 30px;
@@ -124,7 +125,8 @@ body {
   font-size: 2em;
   color: white;
 }
-.content .reachable_under .small_data {
+.content .reachable_under .small_data,
+.content .insurance .small_data {
   font-size: 1.4rem;
 }
 .content .beach_family_wrapper {
