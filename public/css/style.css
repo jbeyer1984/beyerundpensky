@@ -67,7 +67,8 @@ body {
 .content header .navigation_wrapper nav > ul li {
   text-align: center;
   margin: 10px;
-  padding: 10px;
+  padding-left: 1em;
+  padding-right: 1.5em;
   font-family: "Quicksand";
   border-right: 1px solid white;
 }
@@ -151,7 +152,8 @@ body {
   .content .insurance_text {
     margin-left: 0;
   }
-  .content .reachable_under {
+  .content .reachable_under,
+  .content .insurance {
     display: inline-block;
     float: none;
     width: 100%;
